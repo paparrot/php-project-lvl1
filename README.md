@@ -15,3 +15,6 @@ make install
 ## Использование
 ### Brain-even
 [![Brain-Even](https://asciinema.org/a/436001.svg)](https://asciinema.org/a/436001)
+
+### Brain-calc
+[![Brain-Calc](https://asciinema.org/a/5WJCB22HzHzlmcvhvQNb3S12J.svg)](https://asciinema.org/a/5WJCB22HzHzlmcvhvQNb3S12J)
