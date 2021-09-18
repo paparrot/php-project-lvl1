@@ -1,5 +1,6 @@
 #!/usr/bin/env php
 <?php
+
 use function Brain\Games\Even\start;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';

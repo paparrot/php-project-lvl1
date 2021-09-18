@@ -21,3 +21,6 @@ make install
 
 ### Brain-gcd
 [![Brain-gcd](https://asciinema.org/a/3hhwPMZiGruI298etyMPB2SLp.svg)](https://asciinema.org/a/3hhwPMZiGruI298etyMPB2SLp)
+
+### Brain-progression
+[![Brain-progression](https://asciinema.org/a/8pXUGaTBJuDXd0xwpz6bmWYNM.svg)](https://asciinema.org/a/8pXUGaTBJuDXd0xwpz6bmWYNM)
