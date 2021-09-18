@@ -19,7 +19,7 @@ function start(): void
         for ($j = 1; $j < 10; $j += 1) {
             $progressionCurrent += $progressionStep;
             if ($j == $empty) {
-                $righgtAnswers[$j] += $progressionCurrent;
+                $righgtAnswers[] = $progressionCurrent;
                 $progression .= " ..";
             } else {
                 $progression .= " {$progressionCurrent}";

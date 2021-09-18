@@ -20,14 +20,14 @@ function greeting(string $title): string
     return $name;
 }
 
-function printQuestion(array $question): void
+function printQuestion(string $question): void
 {
     line("Question: {$question}");
 }
 
-function promptAnswer(): void
+function promptAnswer(): string
 {
-    prompt("Your answer");
+    return prompt("Your answer");
 }
 
 function checkAnswer(string $answer, string $rightAnswer): bool
