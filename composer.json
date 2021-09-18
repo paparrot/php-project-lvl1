@@ -6,13 +6,13 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
-            "src/Cli.php",
+            "src/Game/Cli.php",
             "src/Engine.php",
-            "src/Even.php",
-            "src/Calc.php",
-            "src/GCD.php",
-            "src/Progression.php",
-            "src/Prime.php"
+            "src/Game/Even.php",
+            "src/Game/Calc.php",
+            "src/Game/GCD.php",
+            "src/Game/Progression.php",
+            "src/Game/Prime.php"
         ]
     },
     "authors": [
