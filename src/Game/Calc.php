@@ -4,7 +4,7 @@ namespace Brain\Games\Calc;
 
 use function Brain\Games\Engine\startGame;
 
-function start()
+function start(): void
 {
     $title = "What is the result of the expression?";
 

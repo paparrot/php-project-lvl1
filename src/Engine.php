@@ -5,7 +5,7 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function welcome()
+function welcome(): string
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -20,38 +20,38 @@ function greeting(string $title): string
     return $name;
 }
 
-function getQuestion($question)
+function printQuestion(array $question): void
 {
     line("Question: {$question}");
 }
 
-function setAnswer()
+function promptAnswer(): void
 {
-    return prompt("Your answer");
+    prompt("Your answer");
 }
 
-function checkAnswer(string $answer, string $rightAnswer)
+function checkAnswer(string $answer, string $rightAnswer): bool
 {
     return strtolower($answer) == $rightAnswer;
 }
 
-function getCorrectMessage()
+function printCorrectMessage(): void
 {
     line("Correct!");
 }
 
-function getWrongMessage(string $answer, string $rightAnswer, string $name)
+function printWrongMessage(string $answer, string $rightAnswer, string $name): void
 {
     line("'{$answer}' is wrong answer ;(. Correct answer was '{$rightAnswer}'.");
     line("Let's try again, {$name}!");
 }
 
-function getCongratulationsMessage(string $name)
+function printCongratulationsMessage(string $name): void
 {
     line("Congratulations, {$name}!");
 }
 
-function startGame(string $title, array $questions, array $rightAnswers)
+function startGame(string $title, array $questions, array $rightAnswers): void
 {
     $START_SCORES = 0;
     $RIGHT_SCORE = 1;
@@ -59,18 +59,18 @@ function startGame(string $title, array $questions, array $rightAnswers)
     $name = greeting($title);
     $scores = $START_SCORES;
     while ($scores < $WIN_SCORES) {
-        getQuestion($questions[$scores]);
-        $answer = setAnswer();
+        printQuestion($questions[$scores]);
+        $answer = promptAnswer();
         $rightAnswer = $rightAnswers[$scores];
         if (checkAnswer($answer, $rightAnswer)) {
-            getCorrectMessage();
+            printCorrectMessage();
             $scores += $RIGHT_SCORE;
         } else {
-            getWrongMessage($answer, $rightAnswer, $name);
+            printWrongMessage($answer, $rightAnswer, $name);
             break;
         }
     }
     if ($scores == $WIN_SCORES) {
-        getCongratulationsMessage($name);
+        printCongratulationsMessage($name);
     }
 }

@@ -4,7 +4,7 @@ namespace Brain\Games\Even;
 
 use function Brain\Games\Engine\startGame;
 
-function start()
+function start(): void
 {
     $title = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
     $questions = [];

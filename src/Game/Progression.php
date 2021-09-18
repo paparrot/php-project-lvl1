@@ -4,7 +4,7 @@ namespace Brain\Games\Progression;
 
 use function Brain\Games\Engine\startGame;
 
-function start()
+function start(): void
 {
     $title = "What number is missing in the progression?";
     $questions = [];
@@ -19,7 +19,7 @@ function start()
         for ($j = 1; $j < 10; $j += 1) {
             $progressionCurrent += $progressionStep;
             if ($j == $empty) {
-                $righgtAnswers[] += $progressionCurrent;
+                $righgtAnswers[$j] += $progressionCurrent;
                 $progression .= " ..";
             } else {
                 $progression .= " {$progressionCurrent}";
