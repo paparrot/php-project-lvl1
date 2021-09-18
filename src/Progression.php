@@ -11,23 +11,21 @@ function start()
     $righgtAnswers = [];
 
     for ($i = 0; $i < 3; $i++) {
-        $empty = rand(0, 9);
+        $empty = rand(1, 9);
         $progressionStart = rand(1, 99);
         $progressionStep = rand(1, 10);
         $progression = "{$progressionStart}";
         $progressionCurrent = $progressionStart;
-
-        for ($j = 0; $j < 9; $j++) {
+        for ($j = 1; $j < 10; $j += 1) {
             $progressionCurrent += $progressionStep;
             if ($j == $empty) {
                 $righgtAnswers[] += $progressionCurrent;
-                $progression .= " ..";
+                $progression .= "_..";
             } else {
-                $progression .= " {$progressionCurrent}";
+                $progression .= "_{$progressionCurrent}";
             }
         }
         $questions[$i] = $progression;
     }
-
     startGame($title, $questions, $righgtAnswers);
 }
