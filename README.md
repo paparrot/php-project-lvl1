@@ -18,3 +18,6 @@ make install
 
 ### Brain-calc
 [![Brain-Calc](https://asciinema.org/a/5WJCB22HzHzlmcvhvQNb3S12J.svg)](https://asciinema.org/a/5WJCB22HzHzlmcvhvQNb3S12J)
+
+### Brain-gcd
+[![Brain-gcd](https://asciinema.org/a/3hhwPMZiGruI298etyMPB2SLp.svg)](https://asciinema.org/a/3hhwPMZiGruI298etyMPB2SLp)
