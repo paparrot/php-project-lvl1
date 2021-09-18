@@ -20,9 +20,9 @@ function start()
             $progressionCurrent += $progressionStep;
             if ($j == $empty) {
                 $righgtAnswers[] += $progressionCurrent;
-                $progression .= "_..";
+                $progression .= " ..";
             } else {
-                $progression .= "_{$progressionCurrent}";
+                $progression .= " {$progressionCurrent}";
             }
         }
         $questions[$i] = $progression;
